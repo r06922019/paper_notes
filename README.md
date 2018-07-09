@@ -1,2 +1,2 @@
-# gan_paper_notes
-So many GAN papers
+# paper_notes
+So many papers, note the notes.
