@@ -1,5 +1,4 @@
-#Notes after reading GAN related papers, any advices are welcome
+# Notes after reading GAN related papers, any advices are welcome
 
-why is QQ
-
+testing markdown syntax
 
