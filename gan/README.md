@@ -1,4 +1,3 @@
-# Notes after reading GAN related papers, any advices are welcome
+# Notes about GAN papers, any advices are welcome
 
-testing markdown syntax
-
+2018/7/9 TO BE UPDAED 
