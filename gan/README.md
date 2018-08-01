@@ -1,3 +1,2 @@
-# Notes about GAN papers, any advices are welcome
+# Papers Notes (GANs)
 
-2018/7/9 TO BE UPDAED 
