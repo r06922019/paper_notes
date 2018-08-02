@@ -63,8 +63,8 @@ for linear systems can not be applied to CNNs due to the nonlinearity of CNNs.
 5. Exps & Notes
     1. 8/2 commit 88cae57   
         1. Even with ICNR (proposed in [1707.02937 Checkerboard artifact free sub-pixel convolution: A note on sub-pixel convolution, resize convolution and convolution resize](https://arxiv.org/abs/1707.02937)) still getting checkerboard artifacts, might arise from the convs in discriminator? 
-            1. k_size % stride != 0 ?
-            2. too small receptive field discussed in Sec 4.4 of [1611.07004 Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004) ) ?
+            1. The conv-layers in the discrimintaor have k_size % stride != 0
+            2. The discriminator's receptive field is too small, which is discussed in Sec 4.4 of [1611.07004 Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004) )
         
     2. 
 6. 
