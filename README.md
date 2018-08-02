@@ -4,10 +4,10 @@ So many papers, note the notes.
 ## 2018/7/31~8/1 Checkerboard artifacts
 
 ### [1707.02937 Checkerboard artifact free sub-pixel](https://arxiv.org/abs/1707.02937)
-### [1806.02658 Super-Resolution using Convolutional Neural Networks without Any Checkerboard Artifacts] (https://arxiv.org/abs/1806.02658)
-### [Article from distill.pub] (https://distill.pub/2016/deconv-checkerboard/)
+### [1806.02658 Super-Resolution using Convolutional Neural Networks without Any Checkerboard Artifacts](https://arxiv.org/abs/1806.02658)
+### [Article from distill.pub](https://distill.pub/2016/deconv-checkerboard/)
 
-1. [distill.pub] (https://distill.pub/2016/deconv-checkerboard/)   
+1. [distill.pub](https://distill.pub/2016/deconv-checkerboard/)   
 Make sure to try the awesome demo of the page!! Surely helps understanding.
 
     1. deconvolutions are prone to artifacts
@@ -21,7 +21,7 @@ Make sure to try the awesome demo of the page!! Surely helps understanding.
 		
     4. Quick fix is switching from deconv to NN-resize then conv, experiements show that parameters are compatible   
 
-2. [1707.02937 Checkerboard artifact free sub-pixel convolution: A note on sub-pixel convolution, resize convolution and convolution resize] (https://arxiv.org/abs/1707.02937)
+2. [1707.02937 Checkerboard artifact free sub-pixel convolution: A note on sub-pixel convolution, resize convolution and convolution resize](https://arxiv.org/abs/1707.02937)
 	
     1. Source of artifacts : deconvolution overlap, random initialization, loss functions
         > The most prominent problem associated with the deconvolution layer is the presence of checkerboard artifacts in output images and dense labels as shown in Figure 1. To combat this problem, smoothness
@@ -36,7 +36,7 @@ constraints, post processing and different architecture designs have been propos
 		[https://github.com/kostyaev/ICNR](https://github.com/kostyaev/ICNR)
 		[https://github.com/pytorch/pytorch/pull/5429/files?diff=split](https://github.com/pytorch/pytorch/pull/5429/files?diff=split)
 	
-3. [1806.02658 Super-Resolution using Convolutional Neural Networks without Any Checkerboard Artifacts] (https://arxiv.org/abs/1806.02658)
+3. [1806.02658 Super-Resolution using Convolutional Neural Networks without Any Checkerboard Artifacts](https://arxiv.org/abs/1806.02658)
     1. Intro & Background   
         Checkerboard artifacts have been studied in linear domain
 	    > On the other hand, checkerboard artifacts have been studied to design linear multirate systems including filter banks and wavelets [19–22]. In addition, it is well-known that checkerboard artifacts are caused by the time-variant property of interpolators in multirate systems, and the condition for avoiding these artifacts have been given [19–21]. However, the condition to avoid checkerboard artifacts
@@ -62,7 +62,7 @@ for linear systems can not be applied to CNNs due to the nonlinearity of CNNs.
 
 5. Exps & Notes
     1. 8/2 commit 88cae57   
-        1. Even with ICNR (proposed in [1707.02937 Checkerboard artifact free sub-pixel convolution: A note on sub-pixel convolution, resize convolution and convolution resize] (https://arxiv.org/abs/1707.02937)) still getting checkerboard artifacts, might arise from the convs in discriminator? 
+        1. Even with ICNR (proposed in [1707.02937 Checkerboard artifact free sub-pixel convolution: A note on sub-pixel convolution, resize convolution and convolution resize](https://arxiv.org/abs/1707.02937)) still getting checkerboard artifacts, might arise from the convs in discriminator? 
             1. k_size % stride != 0 ?
             2. too small receptive field discussed in Sec 4.4 of [1611.07004 Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004) ) ?
         
